@@ -1,6 +1,8 @@
 branches:
   only:
   - master
+script:
+  - echo "Deploying site to S3"
 deploy:
   provider: s3
   access_key_id: AKIAJKG2FSL7MOLNESOA
