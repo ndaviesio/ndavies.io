@@ -1,9 +1,6 @@
 html {
   height: 100%;
   width: 100%;
-  background: url(../img/me.svg) no-repeat bottom -1px right -1px;
-  background-size: contain;
-  background-attachment: fixed;
 }
 
 span.highlight {
@@ -12,7 +9,7 @@ span.highlight {
 
 body {
   margin: 0;
-  padding: 100px 0 100px 120px;
+  padding: 50px 0 100px 120px;
   font-family: Helvetica, Arial, sans-serif;
   color: #3a3a3c;
 }
@@ -79,4 +76,22 @@ div.socialmedia a:hover {
   -moz-transition:.5s ease-in-out;
   -webkit-transition:.5s ease-in-out;
   transition:.5s ease-in-out;
+}
+
+@media (min-width:1281px){
+  html {
+    background: url(../img/me.svg) no-repeat bottom -1px right -1px;
+    background-size: contain;
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width:1281px){
+  div.container {
+    width: 100%;
+  }
+
+  body {
+    padding: 50px 120px 100px 120px;
+  }
 }
