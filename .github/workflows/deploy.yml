@@ -34,5 +34,6 @@
             step: finish
             token: ${{ secrets.GITHUB_TOKEN }}
             env: Website
+            env_url: https://ndavies.io
             status: ${{ job.status }}
             deployment_id: ${{ steps.start-deploy.outputs.deployment_id }}
